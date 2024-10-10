@@ -1,5 +1,4 @@
-#ifndef CONTACT_HPP
-#define CONTACT_HPP
+#pragma once
 
 #include <string>
 
@@ -24,5 +23,3 @@ public:
     std::string getPhoneNumber() const;
     std::string getDarkestSecret() const;
 };
-
-#endif

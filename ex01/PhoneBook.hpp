@@ -1,5 +1,4 @@
-#ifndef PHONEBOOK_HPP
-#define PHONEBOOK_HPP
+#pragma once
 
 #include "Contact.hpp"
 #include <iostream>
@@ -21,5 +20,3 @@ public:
     void displayContacts() const;
     void displayContactDetails(int index) const;
 };
-
-#endif
