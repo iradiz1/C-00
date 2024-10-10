@@ -53,9 +53,15 @@ int main() {
             std::getline(std::cin, input);
             if (std::cin.eof())
                 break;
-            int index = std::stoi(input);
-            phonebook.displayContactDetails(index);
-
+            try
+            {
+                int index = std::stoi(input);
+                phonebook.displayContactDetails(index);
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << "invalid index nbr" << '\n';
+            }
         } else if (command == "EXIT") {
             break;
         } else {
